@@ -11,7 +11,7 @@ const ProfilePage = () => {
   const handleLogout = () => {
     logout().then(() => {
       setInterval(() => {
-        navigate("/");
+        navigate("/Airbnb/");
       }, 1000);
     });
   };
