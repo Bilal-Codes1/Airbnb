@@ -15,14 +15,14 @@ const App = () => {
     <div className="w-screen h-screen flex flex-col">
       <Routes>
         <Route path="/Airbnb/" element={<MainPage />} />
-        <Route path="/Airbnb/login" element={<LoginPage />} />
-        <Route path="/Airbnb/register" element={<RegisterPage />} />
-        <Route path="/Airbnb/profile" element={<ProfilePage />} />
-        <Route path="/Airbnb/accomodations" element={<AccomodationsPage />} />
-        <Route path="/Airbnb/accomodations/new" element={<NewPlace />} />
-        <Route path="/Airbnb/place/:id" element={<PlacePage />} />
+        <Route path="/Airbnb/login/" element={<LoginPage />} />
+        <Route path="/Airbnb/register/" element={<RegisterPage />} />
+        <Route path="/Airbnb/profile/" element={<ProfilePage />} />
+        <Route path="/Airbnb/accomodations/" element={<AccomodationsPage />} />
+        <Route path="/Airbnb/accomodations/new/" element={<NewPlace />} />
+        <Route path="/Airbnb/place/:id/" element={<PlacePage />} />
         <Route path="/Airbnb/bookings" element={<BookedPlaces />} />
-        <Route path="/Airbnb/bookings/:bookingId" element={<BookedPlace />} />
+        <Route path="/Airbnb/bookings/:bookingId/" element={<BookedPlace />} />
         <Route path="*" element={<MainPage/>}/>
       </Routes>
     </div>

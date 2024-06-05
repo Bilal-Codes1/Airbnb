@@ -37,7 +37,7 @@ const Header = () => {
       </div>
       <Link
         className="flex items-center gap-2 border border-[#e0e0e0] rounded-full py-2 px-4 "
-        to={user !== null ? "/Airbnb/profile" : "/Airbnb/login"}
+        to={user !== null ? "/Airbnb/profile" : "/Airbnb/login/"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

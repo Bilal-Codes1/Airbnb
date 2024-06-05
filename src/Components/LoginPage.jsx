@@ -39,7 +39,7 @@ const LoginPage = () => {
       setEmail("");
       setPassword("");
       setInterval(() => {
-        navigate("/");
+        navigate("/Airbnb/");
       }, 3000);
     } catch (error) {
       // Error handling already handled in AuthContext
@@ -100,7 +100,7 @@ const LoginPage = () => {
           </button>
           <div className="text-center py-2 text-[#616161]">
             Don't have an account yet?{" "}
-            <Link className="underline text-[#000]" to={"/Airbnb/register"}>
+            <Link className="underline text-[#000]" to={"/Airbnb/register/"}>
               Register now
             </Link>
           </div>

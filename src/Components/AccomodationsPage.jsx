@@ -13,7 +13,7 @@ const AccomodationsPage = () => {
         <Header />
         <AccountNav color="#FF6B6B" />
         <div className=" flex justify-center mt-2">
-          <Link to={"/Airbnb/accomodations/new"} className="mb-6">
+          <Link to={"/Airbnb/accomodations/new/"} className="mb-6">
             <button className="bg-Primary mt-4 w-52 rounded-full h-10 text-lg text-Background font-normal flex items-center justify-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
