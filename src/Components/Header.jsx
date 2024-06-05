@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className=" stciky top-0 flex justify-between items-center z-50 py-3">
-      <Link className="flex gap-2" to={"/Airbnb/"}>
+      <Link className="flex gap-2" to={"/"}>
         <img src={Logo} alt="" className="w-8 h-8 object-contain" />
         <span className="font-bold text-xl text-Primary">airbnb</span>
       </Link>
@@ -37,7 +37,7 @@ const Header = () => {
       </div>
       <Link
         className="flex items-center gap-2 border border-[#e0e0e0] rounded-full py-2 px-4 "
-        to={user !== null ? "/Airbnb/profile" : "/Airbnb/login/"}
+        to={user !== null ? "/profile" : "/login"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
