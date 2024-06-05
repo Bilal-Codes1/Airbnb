@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import MainPage from "./Components/MainPage";
 import LoginPage from "./Components/LoginPage";
 import RegisterPage from "./Components/RegisterPage";
@@ -13,18 +13,20 @@ import BookedPlace from "./Components/BookedPlace";
 const App = () => {
   return (
     <div className="w-screen h-screen flex flex-col">
-      <Routes>
-        <Route path="/Airbnb" element={<MainPage />} />
-        <Route path="/Airbnb/login" element={<LoginPage />} />
-        <Route path="/Airbnb/register" element={<RegisterPage />} />
-        <Route path="/Airbnb/profile" element={<ProfilePage />} />
-        <Route path="/Airbnb/accomodations" element={<AccomodationsPage />} />
-        <Route path="/Airbnb/accomodations/new" element={<NewPlace />} />
-        <Route path="/Airbnb/place/:id" element={<PlacePage />} />
-        <Route path="/Airbnb/bookings" element={<BookedPlaces />} />
-        <Route path="/Airbnb/bookings/:bookingId" element={<BookedPlace />} />
-        <Route path="*" element={<MainPage/>}/>
-      </Routes>
+      <Router basename="/Airbnb/">
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/accomodations" element={<AccomodationsPage />} />
+          <Route path="/accomodations/new" element={<NewPlace />} />
+          <Route path="/place/:id" element={<PlacePage />} />
+          <Route path="/bookings" element={<BookedPlaces />} />
+          <Route path="/bookings/:bookingId" element={<BookedPlace />} />
+          <Route path="*" element={<MainPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 };
