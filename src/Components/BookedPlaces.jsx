@@ -16,7 +16,7 @@ const BookedPlaces = () => {
           {booked?.length > 0 &&
             booked.map((booking, idx) => (
               <Link
-                to={`/bookings/${booking.id}`}
+                to={`Airbnb/bookings/${booking.id}`}
                 key={idx}
                 className="flex gap-4 bg-[#00000023] rounded-2xl overflow-hidden mb-2"
               >

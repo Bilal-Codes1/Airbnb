@@ -7,7 +7,7 @@ const AccountNav = (props) => {
     <nav className="w-full flex justify-center mt-8 gap-2 mb-">
       <NavLink
         className={`flex items-center justify-center gap-1 rounded-full w-32 h-8 nav bg-[#eee] text-[#000]`}
-        to={"/profile"}
+        to={"/Airbnb/profile"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const AccountNav = (props) => {
       </NavLink>
       <NavLink
         className="bg-[#eee] flex items-center justify-center gap-1 rounded-full w-36 h-8 text-[#000] nav"
-        to="/bookings"
+        to="/Airbnb/bookings"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ const AccountNav = (props) => {
       </NavLink>
       <NavLink
         className="bg-[#eee] flex items-center justify-center gap-1 rounded-full w-56 h-8 text-[#000] nav"
-        to={"/accomodations"}
+        to={"/Airbnb/accomodations"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
